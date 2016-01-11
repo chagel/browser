@@ -16,6 +16,7 @@ require "browser/methods/language"
 require "browser/methods/bots"
 require "browser/methods/tv"
 require "browser/methods/proxy"
+require "browser/methods/wechat"
 
 require "browser/meta/base"
 require "browser/meta/generic_browser"
@@ -28,6 +29,7 @@ require "browser/meta/platform"
 require "browser/meta/proxy"
 require "browser/meta/safari"
 require "browser/meta/webkit"
+require "browser/meta/wechat"
 
 class Browser
   include IE
@@ -40,6 +42,7 @@ class Browser
   include Bots
   include Tv
   include Proxy
+  include Wechat
 
   # Set browser's UA string.
   attr_accessor :user_agent
